@@ -24,5 +24,9 @@ def inherits_one():
 def inherits_two():
  	return render_template('inherits2.html') 
 
+@app.route('/bootstrap/')
+def bootstrap():
+	return render_template('bos.html'), 200
+
 if __name__ == "__main__": 
 	app.run(host='0.0.0.0', debug=True)
